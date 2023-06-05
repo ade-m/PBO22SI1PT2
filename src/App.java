@@ -17,6 +17,8 @@ public class App {
         System.out.println(jerry);
     }
     public static void init(){
+        Mahasiswa owen = new Mahasiswa("Owen","030081211",
+                    "Jl.jl Medan","Sistem Informasi");
         Mahasiswa jerry = new Mahasiswa("Jerry","030081211",
                     "Jl.jl Medan","Sistem Informasi");
         Mahasiswa vanessa = new Mahasiswa("Vannessa","030081211",
