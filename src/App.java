@@ -2,6 +2,7 @@ import model.Mahasiswa;
 
 public class App {
     public static void main(String[] args) throws Exception {
+       init();
         String namaMahasiswa = "Farrel";
         String namaKuliah ="Matematika Diskrit";
         int semester =1;
@@ -14,6 +15,14 @@ public class App {
         Mahasiswa jerry = new Mahasiswa("Jerry","030081211",
                     "Jl.jl Medan","Sistem Informasi");
         System.out.println(jerry);
+    }
+    public static void init(){
+        Mahasiswa jerry = new Mahasiswa("Jerry","030081211",
+                    "Jl.jl Medan","Sistem Informasi");
+        Mahasiswa vanessa = new Mahasiswa("Vannessa","030081211",
+                    "Jl.jl Medan","Sistem Informasi");
+        Mahasiswa salim = new Mahasiswa("Salim","030081211",
+                    "Jl.jl Medan","Sistem Informasi");
     }
     public static void cetakMahasiswa(Mahasiswa x){
         System.out.println(x.getNama() + " "+ x.getAlamat());
