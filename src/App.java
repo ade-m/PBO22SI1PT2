@@ -23,7 +23,7 @@ public class App {
                     "Jl.jl Medan","Sistem Informasi");
         Mahasiswa salim = new Mahasiswa("Salim","030081211",
                     "Jl.jl Medan","Sistem Informasi");
-        Mahasiswa Tyne = new Mahasiswa("Tyne","030081211",
+        Mahasiswa Tyne = new Mahasiswa("Tyne Theodora","030081211",
                     "Jl.jl Medan","Sistem Informasi");
     }
     public static void cetakMahasiswa(Mahasiswa x){
