@@ -6,8 +6,10 @@ public class Dosen {
     private String nama;
     private String nik;
     private ArrayList<Mahasiswa> mahasiswas = 
-        new ArrayList<Mahasiswa>();
-
+        new ArrayList<Mahasiswa>(); // hub 1 ke banyak-> com, agre
+    //private Mahasiswa mahasiswa; //hub 1 ke 1-> com, agre
+    //private String studentID; // hub 1 ke 1 ->assoc
+    //private ArrayList<String> studentID; // hub 1 ke banyak -> assoc
     public Dosen() {
     }
 
