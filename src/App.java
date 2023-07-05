@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import model.Dosen;
@@ -10,6 +11,16 @@ public class App {
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) throws Exception {
        init();
+        // try {
+        //     System.out.println("Input Sisi 1-10 :");
+        //     int s = input.nextInt();
+        //     System.out.println("Luas Persegi :"+ (s+s));
+        // } catch (InputMismatchException e) {
+        //     // TODO: handle exception
+        //     System.out.println("Ada kesalahan inputan, " 
+        //           +"Sisi harus diinput dengan integer :"+
+        //           e.getMessage());
+        // }
 
         System.out.println("setelah init");
         cetakDataMahasiswa();
@@ -35,7 +46,7 @@ public class App {
             System.out.print("Apakah ingin menambah mahasiswa lagi (Y=1, N=0): \t:");
             pilihan=   input.nextInt();
         }while(pilihan==1);
-
+        //tambahkan ke arraylist
         dosen.add(tmpDosen);
     }
     public static void cetakDataDosen(){
@@ -50,7 +61,6 @@ public class App {
             }            
         }
         return null;
-
     }
     public static void inputDataMahasiswa(){
         String nama, programStudi,alamat,studentID;
